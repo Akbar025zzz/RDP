@@ -1,25 +1,25 @@
 {
   "active": true,
-  "hostname": "rdpfree-12",
+  "hostname": "rdpfree-13",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
-    "disk_free_gb": 27.0,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "disk_free_gb": 29.9,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-06T21:37:57Z",
-  "expires_at": "2026-11-07T03:19:57Z",
+  "started_at": "2026-11-07T03:49:06Z",
+  "expires_at": "2026-11-07T09:31:06Z",
   "duration_menit": 342,
-  "run_id": "42298189098",
+  "run_id": "42335633822",
   "run_attempt": "1",
-  "run_number": "12",
-  "run_url": "https://github.com/Akbar025zzz/RDP/actions/runs/42298189098",
+  "run_number": "13",
+  "run_url": "https://github.com/Akbar025zzz/RDP/actions/runs/42335633822",
   "mode": "bersih+win10",
   "runtimes": {
     "vc2022x64": "sudah ada",
@@ -38,35 +38,35 @@
     "net35": "sudah ada"
   },
   "persist": {
-    "source": "xyrdp-state.7z.enc",
-    "files": 5695,
     "profile": "C:\\Users\\xyadmin",
-    "restored": true
+    "files": 5713,
+    "restored": true,
+    "source": "xyrdp-state.7z.enc"
   },
   "storage": {
     "status": "ok",
-    "mode": "boost-full",
-    "before_gb": 26.23,
-    "after_gb": 44.04,
-    "gained_gb": 17.81,
-    "removed_targets": 34,
+    "mode": "boost-ringan",
+    "before_gb": 28.63,
+    "after_gb": 45.88,
+    "gained_gb": 17.25,
+    "removed_targets": 31,
     "drives": [
       {
-        "free_gb": 44.04,
+        "letter": "C",
         "size_gb": 149.89,
-        "used_gb": 105.85,
-        "letter": "C"
+        "used_gb": 104.01,
+        "free_gb": 45.88
       },
       {
-        "free_gb": 219.86,
-        "size_gb": 219.98,
-        "used_gb": 0.13,
-        "letter": "D"
+        "letter": "D",
+        "size_gb": 150.0,
+        "used_gb": 3.0,
+        "free_gb": 147.0
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-06T21:45:57.8385362Z"
+    "updated_at": "2026-11-07T03:58:38.9724849Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -82,9 +82,9 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 2.1,
+    "elapsed_sec": 2.2,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-06T21:46:00.3291959Z"
+    "updated_at": "2026-11-07T03:58:41.7140237Z"
   },
   "win10": {
     "look": "ok",
@@ -96,46 +96,63 @@
   },
   "media": {
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled",
+    "audio_output": "rdp_playback_enabled",
     "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled"
+    "microphone": "rdp_capture_enabled"
+  },
+  "samp": {
+    "playable": true,
+    "directx9": true,
+    "vc2013_x64": true,
+    "game_present": true,
+    "dgvoodoo_d3d9": true,
+    "vc2015_x86": true,
+    "dep_optin": true,
+    "vc2015_x64": true,
+    "silentpatch": false,
+    "fullscreen": true,
+    "samp_client": true,
+    "webview2": true,
+    "status": "runtimes-2026-ready",
+    "vc2013_x86": true,
+    "directplay": true
   },
   "grafis": {
-    "mode": "software",
+    "adapters": "Microsoft Hyper-V Video",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "mesa": "26.2.6",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "adapters": "Microsoft Hyper-V Video",
-    "vulkan": "lavapipe 1.3 (CPU)"
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "mode": "software"
   },
   "games": {
+    "roblox": {
+      "status": "installer_ready",
+      "catatan": "Instalasi resmi Roblox siap. VM dapat ditolak anti-cheat Roblox; tidak ada spoofing BIOS/bypass.",
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
+    },
     "fivem": {
-      "status": true,
-      "sound": true
+      "sound": true,
+      "status": true
+    },
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
     },
     "minecraft_java": {
-      "official_exe": true,
       "tlauncher_jar": true,
-      "opengl46": false,
+      "status": "ready",
       "prismlauncher": true,
+      "opengl46": false,
+      "official_exe": true
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
     },
     "ets2": {
-      "status": "ready",
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
-    },
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "catatan": "Instalasi resmi Roblox siap. VM dapat ditolak anti-cheat Roblox; tidak ada spoofing BIOS/bypass.",
-      "status": "installer_ready"
-    },
-    "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
-    },
-    "memu": {
-      "status": "ready",
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
     }
   },
   "extras": {
@@ -170,20 +187,20 @@
   },
   "akses": {
     "tailscale": {
-      "hostname": "rdpfree",
-      "status": "ok",
-      "ip": "100.84.97.29",
+      "magicdns": "rdpfree-1.tail01beb9.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree.tail01beb9.ts.net."
+      "ip": "100.112.86.121",
+      "status": "ok",
+      "hostname": "rdpfree"
     },
+    "mode": "tailscale",
     "tunnel": {
-      "address": "100.84.97.29:3389",
       "status": "ok",
       "outside": "tailscale",
       "selftest": "ok",
-      "host": "100.84.97.29",
+      "address": "100.112.86.121:3389",
+      "host": "100.112.86.121",
       "port": 3389
-    },
-    "mode": "tailscale"
+    }
   }
 }
